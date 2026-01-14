@@ -189,7 +189,7 @@ const ChartModal = ({ type, history, currentVal, close }) => {
 };
 
 // --- DASHBOARD CONTENT COMPONENT (From Your Request) ---
-const DashboardContent = ({ data, refreshData, user, setTab }) => { 
+const DashboardContent = ({ data, refreshData, user, setTab, handleToggleExercise }) => {
     const [connected, setConnected] = useState(false);
     const [syncing, setSyncing] = useState(false);
     const [selectedMetric, setSelectedMetric] = useState(null);
@@ -197,6 +197,7 @@ const DashboardContent = ({ data, refreshData, user, setTab }) => {
     const [editingMetric, setEditingMetric] = useState(null);
     const [activeAlert, setActiveAlert] = useState(null); 
     const [liveScore, setLiveScore] = useState(0);
+    const { t, language, setLanguage } = useLanguage();
 
     // --- LIVE STATES ---
     const [liveSteps, setLiveSteps] = useState(data.vitals.steps);
@@ -223,7 +224,6 @@ const DashboardContent = ({ data, refreshData, user, setTab }) => {
             const formattedHours = hours % 12 || 12; 
             const formattedTime = `${formattedHours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')} ${ampm}`;
             
-            const { t, language, setLanguage } = useLanguage();
             const found = data.reminders.find(r => r.day === now.getDate() && r.time === formattedTime && !r.completed && !r.notified);
             if (found) setActiveAlert(found);
 
@@ -585,9 +585,10 @@ const SeniorDashboard = () => {
                 setHealthData(data);
             } catch (err) {
                 console.error("Failed to load dashboard", err);
-        }
-    };
-    loadData();
+                setHealthData(MockBackend.getData());
+            }
+        };
+        loadData();
     }, [currentUser]);
 
     const refreshData = () => setHealthData(MockBackend.getData());
@@ -601,7 +602,7 @@ const SeniorDashboard = () => {
     const handleToggleExercise = async () => {
         try {
             // Call the real backend API to update status
-            await api.updateVital('exercise', !data.vitals.exercise);
+            await api.updateVital('exercise', !healthData.vitals.exercise);
             // Refresh dashboard data to reflect changes
             refreshData();
         } catch (error) {
@@ -668,7 +669,7 @@ const SeniorDashboard = () => {
                 </header>
 
                 <main className="flex-1 overflow-y-auto custom-scroll scroll-smooth">
-                    {tab === 'home' && <DashboardContent data={healthData} refreshData={refreshData} user={healthData.user} setTab={setTab} />}
+                    {tab === 'home' && <DashboardContent data={healthData} refreshData={refreshData} user={healthData.user} setTab={setTab} handleToggleExercise={handleToggleExercise} />}
                     {tab === 'profile' && <ProfileTab data={healthData} />}
                     {tab === 'meds' && <MedicineTab data={healthData} refreshData={refreshData} />}
                     {tab === 'wellness' && <WellnessTab />}

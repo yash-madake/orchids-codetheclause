@@ -32,5 +32,5 @@ def chat():
     return jsonify({"reply": reply})
 
 if __name__ == "__main__":
-    # CHANGED PORT TO 5001
+    # CHANGED PORT TO 5001 for compatibility
     app.run(host="0.0.0.0", port=5001, debug=True)

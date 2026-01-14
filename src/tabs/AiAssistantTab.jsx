@@ -26,7 +26,7 @@ const AiAssistantTab = () => {
 
         try {
             // 2. Call the Python Backend API
-            const response = await fetch('http://localhost:5000/api/chat', {
+            const response = await fetch('http://localhost:5001/api/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

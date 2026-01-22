@@ -173,6 +173,8 @@ Senior ID: SEN001 (REQUIRED)
 - [x] Role-based conditional rendering
 - [x] Clean code structure
 - [x] Optimized performance
+- [x] Backend integrated with mongo db
+      
 
 ---
 

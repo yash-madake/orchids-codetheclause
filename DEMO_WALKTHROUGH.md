@@ -88,7 +88,7 @@ Explore these sections:
 
 ### Step 3: Doctor Login with Senior ID
 ```
-📱 Phone: 9876543220
+📱 Phone: 987654321
 🔐 PIN: 5678
 👤 Senior ID: SEN001 ⭐ (Required!)
 🔘 Click "Login" button

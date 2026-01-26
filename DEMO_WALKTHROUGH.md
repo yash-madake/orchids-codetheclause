@@ -16,7 +16,7 @@
 
 ## 📱 Demo Flow 1: Senior Citizen Journey
 
-### Step 1: Role Selection
+### Step 1: Role Selection: Senior, Caretaker , Doctor 
 ```
 🖥️ Landing Page
     ↓

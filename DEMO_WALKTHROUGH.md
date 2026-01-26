@@ -30,7 +30,7 @@
 ### Step 2: Login
 ```
 📱 Phone: 9876543210
-🔐 PIN: 1234
+🔐 PIN: 5678
 🔘 Click "Login" button
 ```
 **What happens:**

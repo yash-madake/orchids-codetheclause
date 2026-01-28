@@ -1,16 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React, { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { AuthProvider } from './contexts/AuthContext'
 import { LanguageProvider } from './contexts/LanguageContext'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <LanguageProvider>  {/* Add Outer Provider */}
-      <AuthProvider>
+    <LanguageProvider>
         <App />
-      </AuthProvider>
     </LanguageProvider>
   </StrictMode>,
 )

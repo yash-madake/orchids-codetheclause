@@ -76,9 +76,9 @@ export const MockBackend = {
                 data = {
                     lastLogin: todayStr,
                     user: { 
-                        name: '', phone: '', pin: '', dob: '', gender: '', address: '', language: '', photo: '', 
-                        emergencyPrimary: { name: '', contact: '', relation: 'Guardian' }, 
-                        caretaker: { name: '', contact: '' },
+                        name: 'Ramesh Kumar', phone: '9876543210', pin: '1234', dob: '1950-05-15', gender: 'Male', address: 'Mumbai', language: 'en', photo: '',
+                        emergencyPrimary: { name: 'Priya', contact: '9876543211', relation: 'Daughter' },
+                        caretaker: { name: 'Sunita', contact: '9876543230' },
                         doctor: { name: '', contact: '' },
                         emergencySecondary: {}, hospitalPref: '', bloodGroup: '', allergies: '', chronicConditions: '', history: '', surgeries: '', treatments: '' 
                     },

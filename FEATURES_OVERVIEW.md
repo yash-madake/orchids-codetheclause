@@ -6,9 +6,9 @@
 
 #### Role Selection Page
 - **Visual Role Cards**: Three distinct role options with icons
-  - 👴 Senior Citizen (Blue theme)
+  - 👴 Senior Citizen (Light Blue theme)
   - 👨‍⚕️ Doctor (Purple theme)
-  - 👩‍⚔️ Caretaker (Green theme)
+  - 👩‍⚔️ Caretaker (Light Green theme)
 - **Clear Descriptions**: Each role card explains the user type
 - **Professional Design**: Gradient backgrounds and smooth animations
 

@@ -9,7 +9,7 @@
   - 👴 Senior Citizen (Light Blue theme)
   - 👨‍⚕️ Doctor (Purple theme)
   - 👩‍⚔️ Caretaker (Light Green theme)
-- **Clear Descriptions**: Each role card explains the user type
+- **Clear Descriptions**: Each role card explains the user type doctor senior caketaker
 - **Professional Design**: Gradient backgrounds and smooth animations
 
 #### Login Forms

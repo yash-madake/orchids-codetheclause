@@ -10,7 +10,7 @@ A comprehensive role-based frontend application for senior care with three disti
 ## Features
 
 ### 🔐 Role-Based Authentication
-- **Common Login Page** with role selection
+- **Common Login Page** with role selection with mainly 3 roles
 - **Seniors**: Standard login with phone + PIN
 - **Doctors & Caretakers**: Login requires phone + PIN + Senior ID
 - Secure session management with protected routes

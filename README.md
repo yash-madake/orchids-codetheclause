@@ -37,7 +37,8 @@ Sushruta is a comprehensive role-based senior care application designed to bridg
 # Install dependencies
 npm install
 
-# Start the Development Server
+# Start the Development Server-
+to start the frontend work
 npm run dev
 ```
 The application will be available at `http://localhost:5173`.

@@ -22,7 +22,7 @@ Sushruta is a comprehensive role-based senior care application designed to bridg
 
 - **Frontend**: React 19, Vite, Tailwind CSS 4, Recharts/Chart.js
 - **Backend**: Python (Flask) for AI Chatbot API
-- **AI Model**: Ollama (Qwen/Llama) for local inference
+- **AI Model**: Ollama (Qwen/Llama) for local inference and helpful insights 
 - **Data**: LocalStorage (with MockBackend simulation)
 
 ## 📦 Installation & Setup

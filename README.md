@@ -2,7 +2,7 @@
 
 Sushruta is a comprehensive role-based senior care application designed to bridge the gap between seniors, doctors, and caretakers. It provides a secure, accessible, and feature-rich platform for health monitoring, medication management, and emergency assistance.
 
-## 🚀 Features
+## 🚀 Features for different roles 
 
 ### 🔐 Role-Based Access Control
 - **Senior**: Personal dashboard for health tracking, secutmre data medication reminders, and wellness . which requires more of work to be done

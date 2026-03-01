@@ -1,5 +1,4 @@
-# React + Vite frontend app and website
-fun
+# React + Vite frontend app 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are in our project available:

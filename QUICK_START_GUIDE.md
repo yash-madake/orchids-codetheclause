@@ -24,7 +24,7 @@
 ### 2️⃣ Doctor Login
 ```
 📱 Phone: 9876543220
-🔐 PIN: 5678
+🔐 PIN: 56789
 👤 Senior ID: SEN001 (required)
 ```
 **What you'll see:**
